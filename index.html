@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily price of various commodities</title>
+</head>
+<body>
+    <h1 class="heading">Current Daily Price of Various Commodities from Various Markets (Mandi)
+    </h1>
+    <p class="source">Source : Open Government Data (OGD) Platform India –<span class="data">data.gov.in</span> </p>
+    <div class="search-food">
+        <form  id="get">
+            <input type="text" name="food" id="foodName" placeholder="Try entering food name... eg:apple">
+            <input type="submit" id=search-food value="Search"></input>
+        </form> 
+        <div id="loader" style="display: none">Loading data please wait...</div>
+
+    </div>
+    <div id="profile">
+    </div>
+    
+    <footer class="footer">
+        Food Nutrino &copy;
+    </footer>
+    <script src="src/usda.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
