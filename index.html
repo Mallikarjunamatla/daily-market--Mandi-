@@ -10,11 +10,12 @@
 <body>
     <h1 class="heading">Current Daily Price of Various Commodities from Various Markets (Mandi)
     </h1>
-    <p class="source">Source : Open Government Data (OGD) Platform India –<span class="data">data.gov.in</span> </p>
-    <div class="search-food">
+    <p class="source">Source : Open Government Data (OGD) Platform India – 
+        <a href="https://data.gov.in/" target="_blank" class="data">data.gov.in</a> </p>
+    <div class="search">
         <form  id="get">
-            <input type="text" name="food" id="foodName" placeholder="Try entering food name... eg:apple">
-            <input type="submit" id=search-food value="Search"></input>
+            <input type="text"  id="market-state" placeholder="Try entering state name...">
+            <input type="submit" id=search-market value="Search"></input>
         </form> 
         <div id="loader" style="display: none">Loading data please wait...</div>
 
@@ -23,9 +24,11 @@
     </div>
     
     <footer class="footer">
-        Food Nutrino &copy;
+         &copy; 2021 Mandi markets.
     </footer>
-    <script src="src/usda.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/ui.js"></script>
+
     <script src="src/main.js"></script>
 </body>
 </html>
