@@ -21,7 +21,7 @@ form.addEventListener('click', (e) => {
     .then(data => {
       if(!data) {
         // Show alert
-        ui.showAlert('User not found', 'alert alert-danger');
+        ui.showAlert('Not found', 'alert alert-danger');
       } else {
         // Show profile
         console.log(data)
